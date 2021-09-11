@@ -46,20 +46,18 @@
 
                 h2 { text-align: center;
                 }
-                #last_li {color: tan
+                #last_li {color: white
                 }
 
-                #last_li {text-align: right;
-                }
 
-                #cat {color:coral
+                #cat {color:burlywood
                 }
                 .split {
-                    height: 100%;
+                    position: absolute;
+                    height: 50%;
                     width: 50%;
-                    position:fixed;
                     z-index: 1;
-                    top: 0;
+                    top: 10;
                     overflow-x: hidden;
                     padding-top: 20px;
                     }
@@ -67,18 +65,18 @@
                     /* Control the left side */
                 .left {
                     left: 0;
-                    background-color: #111;
+                    background-color:tan;
                     }
 
                     /* Control the right side */
                 .right {
                     right: 0;
-                    background-color: red;
+                    background-color:coral;
                     }
 
                     /* If you want the content centered horizontally and vertically */
                 .centered {
-                    position: absolute;
+                    position: relative;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
@@ -86,7 +84,7 @@
                     }
 
                     #resize {
-                        width: 1000px;
+                        width: 800px;
                         height: 1000px;
                         object-fit: contain;
                         }
@@ -97,6 +95,9 @@
                         object-fit:contain;
                         
                         }
+
+                    
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -140,14 +141,33 @@
         <div class="centered">
          <a href="List_Test.html">Click here for more about dogs</a>
             <img id="resize" src= "https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/HB4AT3D3IMI6TMPTWIZ74WAR54.jpg" alt="Dog">
-               <h2> Cute doggo </h2>
+            <p>  
+            <h2> Cute doggo </h2>
+               <h2 id=last_li>Dogs</h2>
+
+               <li id=last_li> list 2 </li>
+               <li id=last_li>list 2 </li>
+               <li id=last_li> list 3</li>
+               <li id=last_li> list 4</li>
+               <li id=last_li> item 5</li>
+
+            </p> 
         </div>
+
     </div>
     <div class="split right">
         <div class="centered">
           <img id=cat src="https://www.womansworld.com/wp-content/uploads/2019/02/why-do-cats-purr.jpg?w=715" alt="Cat">
           <h2>Cute kitty</h2>
           <p>Check me out</p>
+          <h2 id=last_li>Cats</h2>
+
+          <li id=last_li> list 2 </li>
+          <li id=last_li>list 2 </li>
+          <li id=last_li> list 3</li>
+          <li id=last_li> list 4</li>
+          <li id=last_li> item 5</li>
+        </p>
         </div>
       </div>
 
@@ -165,7 +185,7 @@
     <title>Which is better? Cats or Dogs?</title>
     </p>
 
-    <div id=bottom tag> </div>
+    
     <p style="text-align:left">
         <h2 id=last_li>Dogs</h2>
 

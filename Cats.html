@@ -1,48 +1,162 @@
 <html>
     <head>
-        <style>
-            li{ color:blue
+        <body>
+            <div class="topnav">
+          <a class="active" href="#home">Home</a>
+          <a href="Dogs.html">Dogs</a>
+          <a href="Cats.html">Cats</a>
+          <a href="#about">About</a>
+        </div>
+            <p 
             
-            }
-            h1 {background-color: burlywood;
-                 color:blueviolet
             
-            }
-            #last_li {color:coral}
+            style="text-align:center">
+        
+        
+                <h1>Cat Gallery</h1>
 
-            ul li {
-                list-style: none;
-                display: inline-block;
-                width: 25%;
-                background-color: darkgreen;
-                color:cornflowerblue
-                
-            }
+        <style>
+           
+            
             ul li:hover {background-color:darkgrey;}
 
 
+            h1 { text-align: center;
+                }
+
+                h2 { text-align: center;
+                }
+                #last_li {color: white
+                }
+
+
+                #cat {color:burlywood
+                }
+                .split {
+                    position: absolute;
+                    height: 50%;
+                    width: 50%;
+                    z-index: 1;
+                    top: 10;
+                    overflow-x: hidden;
+                    padding-top: 20px;
+                    }
+
+                    /* Control the left side */
+                .left {
+                    left: 0;
+                    background-color:tan;
+                    }
+
+                    /* Control the right side */
+                .right {
+                    right: 0;
+                    background-color:coral;
+                    }
+
+                    /* If you want the content centered horizontally and vertically */
+                .centered {
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    }
+
+                    #resize {
+                        width: 800px;
+                        height: 1000px;
+                        object-fit: contain;
+                        }
+
+                    #cat {
+                        width: 800px;
+                        height: 1000px;
+                        object-fit:contain;
+                        
+                        }
+                        table {
+                    font-family: arial, sans-serif;
+                    border-collapse: collapse;
+                    width: 100%;
+                    }
+
+                    td, th {
+                    border: 1px solid #dddddd;
+                    text-align: left;
+                    padding: 8px;
+                    }
+
+                    tr:nth-child(even) {
+                    background-color: #dddddd;
+                    }
+
+                    
+
+                        body {
+                        margin: 0;
+                        font-family: Arial, Helvetica, sans-serif;
+                        }
+                        
+                        .topnav {
+                        overflow: hidden;
+                        background-color: #333;
+                        }
+                        
+                        .topnav a {
+                        float: left;
+                        color: #f2f2f2;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                        font-size: 17px;
+                        }
+                        
+                        .topnav a:hover {
+                        background-color: #ddd;
+                        color: black;
+                        }
+                        
+                        .topnav a.active {
+                        background-color:rgb(185, 167, 133);
+                        color: white;
+                        }
+
+                        
+
+                            .row {
+                            display: flex;
+                            }
+
+                            /* Create three equal columns that sits next to each other */
+                            .column {
+                            flex: 33.33%;
+                            padding: 5px;
+                            }
+
+
+
+
+                        
         </style>
 
     </head>
     <body>
-        <h1> Stuff to Buy</h1>
-            <h2> <ul>
-                <li> Microfiber cloth</li>
-                <li> Vaseline</li>
-            
 
-
-            </ul>
-            </h2>
-
-        <h1> Hello World <h1>
-            <h2> <ol>
-                <li> list 2 </li>
-                <li style= "color:red">list 2 </li>
-                <li> list 3</li>
-                <li> list 4</li>
-                <li id=last_li> item 5</li>
-            </ol>
-        </h2>
-    </body>
+        <h2>Cute cats</h2>
+        <p>Here are some cute images of cats</p>
+        
+        <div class="row">
+          <div class="column">
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-girl-cat-names-1606245046.jpg" alt="Cat 1" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="https://www.baldivisvet.com.au/wp-content/uploads/2017/10/cats-cute-cat-licking-paw1920.jpg" alt="Cat 2" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="https://i.imgflip.com/52h7fg.jpg" alt="Cat 3" style="width:100%">
+          </div>
+        </div>
+        
+        </body>
 </html>
